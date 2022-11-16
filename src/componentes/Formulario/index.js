@@ -18,6 +18,10 @@ const Formulario = (props) => {
       imagem,
       time,
     });
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
   };
 
   return (
@@ -35,7 +39,7 @@ const Formulario = (props) => {
           obrigatorio={true}
           label="Cargo"
           placeholder="Digite sua idade"
-          cargo={cargo}
+          valor={cargo}
           aoAlterado={(valor) => setCargo(valor)}
         />
         <CampoTexto
